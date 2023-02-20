@@ -1,8 +1,11 @@
 # CSVParser
 Parser per CSV: scrittura e lettura  di oggetti _JavaBean_ in file `.csv`.
 
+## Funzionamento
+Mediante reflection, viene letta la struttura della classe di cui viene effettuato il parsing. Vengono riportati e imoportati i valori degli attributi della classe con file specificati: <!-- TODO: riportare codice e documentare --> 
+
 ## Requisiti
-L'oggetto deve essere un rispettare le seguenti condizioni:
+L'oggetto deve rispettare le seguenti condizioni:
 - deve essere  [JavaBean](https://it.wikipedia.org/wiki/JavaBean)
 - l'ordine di apparizione degli attributi deve essere identico tra la classe dell'oggetto e l'intestazione dei campi nel file `.csv`
 - il primo attributo della classe dell'oggetto deve essere `serialVersionUID`
